@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+        >
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status Info"
+            android:id="@+id/textViewStatus" android:layout_gravity="center_horizontal"
+            android:layout_alignParentTop="true" android:layout_centerHorizontal="true"
+            android:layout_marginTop="21dp"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enumerate"
+            android:id="@+id/btnEnum" android:layout_gravity="center_horizontal"
+            android:layout_below="@+id/textViewStatus" android:layout_alignStart="@+id/editText"
+            android:layout_marginTop="37dp"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send Stream"
+            android:id="@+id/btnSend" android:layout_gravity="center_horizontal"
+            android:layout_toEndOf="@+id/btnStop"
+            android:layout_below="@+id/btnEnum" android:layout_alignStart="@+id/btnEnum"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Play"
+            android:id="@+id/btnPlay" android:layout_gravity="center_horizontal"
+            android:layout_toEndOf="@+id/btnSeek"
+            android:layout_alignTop="@+id/btnSend"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pause"
+            android:id="@+id/btnPause" android:layout_gravity="center_horizontal"
+            android:layout_toEndOf="@+id/textViewStatus"
+            android:layout_alignTop="@+id/btnDetails" android:layout_alignStart="@+id/btnStop"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stop"
+            android:id="@+id/btnStop" android:layout_gravity="center_horizontal"
+            android:layout_alignTop="@+id/btnClean" android:layout_alignStart="@+id/btnPlay"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText" android:layout_gravity="center_horizontal"
+            android:hint="Enter Seek Time: E.g 00:01:23"
+            android:layout_below="@+id/btnPause" android:layout_centerHorizontal="true"
+            android:layout_marginTop="39dp"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seek"
+            android:id="@+id/btnSeek" android:layout_gravity="center_horizontal"
+            android:layout_toEndOf="@+id/btnEnum" android:layout_below="@+id/editText"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get Details"
+            android:id="@+id/btnDetails" android:layout_gravity="center_horizontal"
+            android:layout_toEndOf="@+id/btnSeek"
+            android:layout_below="@+id/btnClean" android:layout_alignStart="@+id/btnClean"
+            android:layout_alignEnd="@+id/btnClean"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cleanup"
+            android:id="@+id/btnClean" android:layout_gravity="center_horizontal"
+            android:layout_below="@+id/btnSend" android:layout_alignStart="@+id/btnSend"
+            android:layout_alignEnd="@+id/btnSend"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select"
+            android:id="@+id/btnSelect" android:layout_toEndOf="@+id/textViewStatus" android:layout_above="@+id/btnPlay"
+            android:layout_alignStart="@+id/btnPlay"/>
+</RelativeLayout>
+

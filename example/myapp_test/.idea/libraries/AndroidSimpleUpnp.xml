@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="AndroidSimpleUpnp">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../AndroidSimpleUpnp/out/artifacts/AndroidSimpleUpnp_jar/AndroidSimpleUpnp.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
